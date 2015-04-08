@@ -34,12 +34,14 @@
             {
                 for (var i = 0; i < 300000; i++)
                 {
+                    var sb = new StringBuilder();
                     foreach (var property in properties)
                     {
-                        var value = ValueToString(property.GetValue(foo));
-                        var bytes = Encoding.UTF8.GetBytes(value);
-                        md5.TransformBlock(bytes, 0, bytes.Length, bytes, 0);
+                        sb.Append(ValueToString(property.GetValue(foo)));
                     }
+
+                    var bytes = Encoding.UTF8.GetBytes(sb.ToString());
+                    md5.TransformBlock(bytes, 0, bytes.Length, bytes, 0);
                 }
 
                 md5.TransformFinalBlock(new byte[0], 0, 0);
@@ -48,13 +50,13 @@
 
             sw.Stop();
 
-            var sb = new StringBuilder();
+            var hexHash = new StringBuilder();
             foreach (var b in hash)
             {
-                sb.Append(b.ToString("x2"));
+                hexHash.Append(b.ToString("x2"));
             }
 
-            Console.WriteLine(sb.ToString());
+            Console.WriteLine(hexHash.ToString());
             Console.WriteLine(sw.Elapsed);
         }
 
