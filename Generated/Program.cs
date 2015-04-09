@@ -32,7 +32,7 @@
             generator.Emit(OpCodes.Stloc_0);
             generator.Emit(OpCodes.Ldloc_0);
 
-            var append = typeof(StringBuilder).GetMethod("Append", new[] { typeof (string) });
+            var append = typeof(StringBuilder).GetMethod("Append", new[] { typeof(string) });
             foreach (var property in properties)
             {
                 generator.Emit(OpCodes.Ldarg_0);
