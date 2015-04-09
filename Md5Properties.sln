@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31206.0
+VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Md5Properties", "Md5Properties\Md5Properties.csproj", "{47EE24A0-72EB-4ED1-975A-2747A4CC58CA}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Baseline", "Baseline\Baseline.csproj", "{912F7302-E045-4411-AAFD-432812E5D78B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generated", "Generated\Generated.csproj", "{53B180B8-9C61-43DD-8231-3F92D8CDAEF0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeneratedWithArray", "GeneratedWithArray\GeneratedWithArray.csproj", "{283CD914-F745-491C-A759-F571626D5283}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{53B180B8-9C61-43DD-8231-3F92D8CDAEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{53B180B8-9C61-43DD-8231-3F92D8CDAEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{53B180B8-9C61-43DD-8231-3F92D8CDAEF0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{283CD914-F745-491C-A759-F571626D5283}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{283CD914-F745-491C-A759-F571626D5283}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{283CD914-F745-491C-A759-F571626D5283}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{283CD914-F745-491C-A759-F571626D5283}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
